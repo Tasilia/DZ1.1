@@ -8,7 +8,7 @@ public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
     @Test
-    void beforeTheBoundary(){
+    void beforeTheBoundary() {
         int amount = 900;
 
         int actual = service.remain(amount);
@@ -18,7 +18,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void afterTheBoundary(){
+    void afterTheBoundary() {
         int amount = 1100;
 
         int actual = service.remain(amount);
@@ -28,7 +28,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void onTheBoundary(){
+    void onTheBoundary() {
         int amount = 1000;
 
         int actual = service.remain(amount);
